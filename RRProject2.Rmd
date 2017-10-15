@@ -1,0 +1,17 @@
+---
+title: 'Developing Data Products Week 2 Peer-graded Assignment: Leaflet'
+author: "Feng Qian"
+date: "10/15/2017"
+---
+
+In this project, I created a web page using R Markdown that features a map of the location of Empire State Building in NYC created with Leaflet.
+
+```{r, eval=FALSE}
+library(leaflet)
+library(magrittr)
+m <- leaflet() %>%
+  addTiles() %>%  
+  addMarkers(lng=-73.985428, lat=40.748817,
+    popup="Empire State Building")
+```
+
